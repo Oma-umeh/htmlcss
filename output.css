@@ -538,6 +538,18 @@ video {
   width: 100%;
 }
 
+@media (min-width: 300px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -794,12 +806,8 @@ video {
   height: 100%;
 }
 
-.w-\[450\] {
-  width: 450;
-}
-
-.w-full {
-  width: 100%;
+.w-\[750px\] {
+  width: 750px;
 }
 
 .flex-shrink {
@@ -1003,6 +1011,10 @@ video {
 
 .list-outside {
   list-style-position: outside;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .appearance-none {
@@ -1318,6 +1330,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -1862,6 +1880,11 @@ video {
   padding: 2rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2009,6 +2032,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2338,6 +2366,18 @@ video {
     width: 100%;
   }
 
+  @media (min-width: 300px) {
+    .sm\:container {
+      max-width: 300px;
+    }
+  }
+
+  @media (min-width: 400px) {
+    .sm\:container {
+      max-width: 400px;
+    }
+  }
+
   @media (min-width: 640px) {
     .sm\:container {
       max-width: 640px;
@@ -2373,6 +2413,15 @@ video {
   font-weight: 700;
 }
 
+.hover\:text-blue-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
@@ -2391,9 +2440,21 @@ video {
   text-align: center;
 }
 
+@media (min-width: 300px) {
+  .xxs\:w-full {
+    width: 100%;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-\[75\%\] {
+    width: 75%;
   }
 }
 
